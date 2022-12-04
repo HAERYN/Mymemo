@@ -24,6 +24,21 @@ const Title = styled.h1`
   padding: 15px 25px;
 `;
 
+const MemoList = styled.div``;
+
+const MemoItem = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  width: 100%;
+  font-size: 1.2em;
+  border-bottom: 1px solid #eee;
+`;
+
+const MemoCheck = styled.input`
+  margin-right: 15px;
+`;
+
 export function HomePage() {
   return (
     <>
@@ -34,6 +49,12 @@ export function HomePage() {
       <Wrapper>
         <Box>
           <Title>할 일</Title>
+          <MemoList>
+            <MemoItem>
+              <MemoCheck type="checkbox" />
+              나는 메모야
+            </MemoItem>
+          </MemoList>
         </Box>
       </Wrapper>
     </>
